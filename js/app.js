@@ -89,8 +89,8 @@ if (this.y < 0) {
 function winGame(){
    
     winModal.style.display = "block";
-    let finalCounter=document.querySelector(".counter");
-   
+    let finalCounter=document.querySelector(".crossed").inn;
+    crossed.inner = finalCounter; // Update score points in HTML
     
 };
 
