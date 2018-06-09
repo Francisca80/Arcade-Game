@@ -1,8 +1,6 @@
 
-
-let counter = 0;
-
-
+var counter= 0;
+var modal = document.querySelector(".popup");
 
 // Enemies our player must avoid
 var Enemy = function(x,y,speed) {
@@ -74,26 +72,20 @@ if (this.y < 0) {
     this.x = 200;
     this.y = 380;
     
-   
+//count the times the playes crosses and invoke modal when winning   
     counter = counter + 1; // Increase Score 
     crossed.innerHTML = counter; // Update score points in HTML
     console.log(counter);
-    if (counter == 3) {
+    if (counter == 5) {
        winGame();
       }
 }
 };
  
-
-
+//popup modal when the game is won
 function winGame(){
-   
-    winModal.style.display = "block";
-    let finalCounter=document.querySelector(".crossed").inn;
-    crossed.inner = finalCounter; // Update score points in HTML
-    
+    winModal.style.display = "block"; 
 };
-
 
 Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
@@ -131,9 +123,6 @@ enemyPosition.forEach(function(posY) {
     enemy = new Enemy(0, posY, 100 + Math.floor(Math.random() * 512));
     allEnemies.push(enemy);
 });
-
-
-
 
 
 // This listens for key presses and sends the keys to your
