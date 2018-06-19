@@ -6,7 +6,11 @@ This game is made for the udacity nanodegree course projects.
 How to play the game
 =====================
 
-Start the game through this url: https://francisca80.github.io/Arcade-Game/
+Start the game by loading the game locally.
+Download/clone the repository with the arcade game( Francisca80/Arcade-Game)
+The open the index.html in a browser.
+
+Start the game live through this url: https://francisca80.github.io/Arcade-Game/
 in your browser. 
 
 
